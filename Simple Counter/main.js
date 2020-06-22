@@ -1,3 +1,4 @@
+//main JavaScript file
 var count=0;
 $("h2").html(count);
   $("#decrease").click( function(){
