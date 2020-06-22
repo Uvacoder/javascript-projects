@@ -7,11 +7,65 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+    body{
+      background-color: #F1F5F8;
+      text-align: center;
+      font-family: var(--ff-secondary);
+    }
+    .flex-box {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding-top: 170px;
+      height: 100%;
+      width: 90%;
+    }
+    .flexbox-item {
+      height: 120px;
+      width: auto;
+    }
+      h1 {
+        font-size: 320%;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 600%;
+      }
+      button{
+        margin: 20px;
+        padding: -3px 5px -3px 5px;
+      }
+      .click{
+        border:3px solid black;
+        border-radius: 6px;
+      }
+      .click:hover{
+        background-color: black;
+        border:3px solid black;
+        border-radius: 5px;
+        color: white;
+      }
+
+    </style>
+
     <title>Simple Counter</title>
   </head>
   <body>
     <div class="container">
-
+    <div class="flex-box">
+        <h1>Counter</h1>
+      <div class="flexbox-item" id="number">
+        <p><h2>5</h2></p>
+      </div>
+      <div class="buttons flexbox-item">
+      <button type="button" id="decrease" class="btn btn-light click">DECREASE</button>
+        <button type="button" id="reset" class="btn btn-light click">RESET</button>
+        <button type="button" id="increase" class="btn btn-light click">INCREASE</button>
+      </div>
+    </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
