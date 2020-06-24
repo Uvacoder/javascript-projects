@@ -8,62 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <style>
-
-      body{
-        background: #F1F5F8;
-        text-align: center;
-        margin: 0;
-      }
-      .capsule{
-        display: block;
-        text-align: center;
-        margin: auto;
-        height: 90%;
-        width:100%;
-        margin-top: 60px;
-
-      }
-      #underline{
-        justify-content: center;
-        margin-top: 15px;
-        margin-left: 45%;
-        height: 5px;
-        width: 70px;
-        border-top: 5px solid #73c7e2;
-      }
-
-    .box{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 420px;
-      flex-wrap: wrap;
-      overflow: auto;
-      margin-top: 55px;
-
-    }
-    .box-item{
-      width: 600px;
-      height: 95%;
-      margin-top: 10px;
-      background: white;
-      box-sizing: border-box;
-      border-radius: 7px;
-      box-shadow: 0px 0px 8px 3px #e3e6e8;
-    }
-    </style>
+    <link rel="stylesheet" href="main.css">
 
     <title>Review/Quotes</title>
   </head>
   <body>
+    <!--Heading-->
     <div class="container">
     <div class="capsule">
         <h1>Our Reviews</h1>
         <div id="underline"></div>
+      <!--Review-->
       <div class="box" >
         <div class ="box-item" id="card">
-
+          <div class="profilePicCont">
+            <img id="profilePic" src="images/person-1.jpg">
+          </div>
+          <div class="info">
+            <div class="name-title"><p id="name"><h5>Susan Smith</h5></p><p id="title">WEB DEVELOPER</p></div>
+          </div>
+          <div class="review">
+            <p id="review-text">I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry</p>
+          </div>
+          <div class="buttons">
+              <button class="arrows" id="left"><i class="arrow left"></i></button><button class="arrows" id="right"><i class="arrow right"></i></button>
+          </div>
+          <div class="buttons"><button  id="surprise">Surprise me</button></div>
       </div>
       </div>
     </div>
