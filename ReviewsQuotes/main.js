@@ -1,3 +1,4 @@
+//variable which holds the information of the reviewer
 var names = [ "Susan Smith","Anna Johnson","Peter Jones","Bill Anderson"];
 var job = ["WEB DEVELOPER","WEB DESIGNER","INTERN","THE BOSS"];
 var review = ["I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
@@ -7,6 +8,7 @@ var review = ["I'm baby meggings twee health goth +1. Bicycle rights tumeric cha
     ];
 var index=0;
 var pic = 0;
+    //This function changes the necessary divs to show different reviews of different people
     function change(index){
         pic = index+1;
       $("#profilePic").attr("src", "images/person-"+pic+".jpg");
@@ -14,6 +16,7 @@ var pic = 0;
       $("#title").html(job[index]);
       $("#review-text").html(review[index]);
     }
+  //when left arrow is clicked then index is increased
   $("#right").click( function(){
     index += 1;
     if (index > 3){
@@ -22,6 +25,7 @@ var pic = 0;
     change(index);
 
   });
+//when left arrow is clicked then index is reduced
   $("#left").click( function(){
     index -= 1;
     if (index < 0) {
@@ -29,4 +33,9 @@ var pic = 0;
     }
 
     change(index);
+  });
+//surprise button chooses a review randomly
+  $("#surprise").click(function(){
+      index = Math.floor((Math.random() * 4) + 1) - 1;
+      change(index);
   });
