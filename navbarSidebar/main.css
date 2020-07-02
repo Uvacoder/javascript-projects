@@ -1,0 +1,60 @@
+/*main CSS*/
+body{
+  background-color: #F1F5F8;
+  text-align: center;
+  margin: 0;
+  }
+  nav{
+    background: black;
+    display: block;
+    height: 70px;
+    width: 100%;
+    box-shadow : 6px 0px 15px #cecece;
+  }
+  .navbar-item{
+    padding: 5px;
+  }
+
+  #logo{
+    margin-left: 5%;
+    color: white;
+    float:left;
+  }
+
+
+  .tabs{
+    color: white;
+    letter-spacing:2px;
+    font-size:110%;
+    font-weight: bold;
+    padding-top: 13px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  a{
+
+    color: white;
+  }
+  a:hover{
+    color: grey;
+    text-decoration: none;
+  }
+  .tabs li {
+    display: inline;
+    float: left;
+    margin: 5px;
+    padding-right: 8px;
+  }
+  .links{
+    margin-left: 30%;
+  }
+  .social{
+    float: right;
+    margin-top: -25px;
+  }
+  .social-links li {
+    display: inline;
+    float: left;
+    padding-right: 16px;
+  }
