@@ -61,6 +61,58 @@
          </ul>
        </div>
     </nav>
+    <div class="sidebar">
+      <div class="sidebar-item" id="sidebar-logo"><h3>namrata<span style="color:grey; font-size: 135%;">pdr<span></h3></div>
+      <div class="sidebar-item" id="side-button">
+        <button class="sidebar-toggle">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+      </div>
+    </div>
+    <aside>
+      <!-- links -->
+      <div class="sidebar-item links">
+       <ul class="sidebar-tabs">
+         <li>
+           <a href="#">home</a>
+         </li>
+         <li>
+           <a href="#">about</a>
+         </li>
+         <li>
+           <a href="#">projects</a>
+         </li>
+         <li>
+           <a href="#">contact</a>
+         </li>
+       </ul>
+     </div>
+     <!--social media icons-->
+     <div class="sidebar-item social">
+       <ul class="social-links">
+        <li>
+          <a href="https://twitter.com/namrata138">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/whydowelive_/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/namrata138">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/namratapdr">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+       </ul>
+     </div>
+    </aside>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -68,6 +120,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!--script src="main.js"></script-->
     <script>
+
+        $("aside").hide();
+         $(".sidebar-toggle").click(function(){
+           $("aside").toggle( '10000', function(){
+            });
+            });
+
 
     </script>
   </body>
