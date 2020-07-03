@@ -1,16 +1,24 @@
 /*main CSS*/
+html{
+  height: 100%;
+  margin: 0;
+}
 body{
   background-color: #F1F5F8;
-  text-align: center;
+  height: 100%;
   margin: 0;
   }
+    @media (min-width: 768px) and (max-width: 1440px) {
   nav{
+      text-align: center;
     background: black;
     display: block;
     height: 70px;
     width: 100%;
     box-shadow : 6px 0px 15px #cecece;
   }
+
+
   .navbar-item{
     padding: 5px;
   }
@@ -58,3 +66,76 @@ body{
     float: left;
     padding-right: 16px;
   }
+  .sidebar {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 767.98px) {
+
+      .navbar-item {
+        display: none;
+      }
+      .sidebar{
+        text-align: center;
+        background: black;
+        display: block;
+        height: 70px;
+        width: 100%;
+        box-shadow : 6px 0px 15px #cecece;
+      }
+      #sidebar-logo{
+        padding:5px;
+        color: white;
+      }
+      #side-button{
+        float: right;
+        margin-top: -40px;
+        padding-right: 4%;
+      }
+      button{
+        border: none;
+        background:black;
+        color: white;
+      }
+      aside{
+        position: absolute;
+        top: 0;
+        float: left;
+        background: black;
+        text-align: left;
+        width: 30%;
+        height: 100% ;
+        transition-timing-function: ease-in-out;
+      }
+      .sidebar-tabs{
+        letter-spacing:2px;
+        font-size:110%;
+        font-weight: bold;
+        padding-top: 13px;
+        margin-left: -12%;
+      }
+      ul{
+        list-style-type: none;
+      }
+      a{
+        color: white;
+      }
+      a:hover{
+        color: grey;
+        text-decoration: none;
+      }
+      .social{
+        position: absolute;
+        bottom: 10px;
+        margin-left: -4%;
+      }
+      .social-links li {
+        display: inline-block;
+        float: left;
+        padding-right: 10px;
+      }
+ }
