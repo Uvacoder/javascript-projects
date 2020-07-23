@@ -34,8 +34,8 @@ overflow: auto;
 margin-top: 55px;
 
 }
-@media (max-width:660px) {
- . box {
+@media (max-width:769px) {
+ .box {
      height: 500px;
  }
 }
