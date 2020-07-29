@@ -1,0 +1,130 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+ html ,body{
+     width: 100%;
+     height: 100%;
+ }
+body{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin: 0;
+  background-color: #cbcccc;
+}
+*{
+    box-sizing: border-box;
+}
+h2{
+    margin-top: -1rem;
+    color:#0a0d26 ;
+}
+ h5{
+    color: white;
+   
+}
+p , a {
+    color:#cfd2d3;
+}
+a{
+     font-family: 'Roboto Mono', monospace;
+     font-size: 1rem;
+    text-decoration: none;
+}
+.container{
+    padding: 5%;
+    position: relative;
+}
+.cards-container{
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    height: 300px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-container{
+   background: rgb(32,38,97);
+background: linear-gradient(39deg, rgba(32,38,97,1) 45%, rgba(11,13,33,1) 100%);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px #6a77ed;
+    border: 2px solid white;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    position: relative;
+    padding: 0 5%;
+    max-width: 18rem;
+    max-height: 10rem;
+}
+.card-container:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+.card h5{
+    font-size: 120%;
+}
+button {
+    background: transparent;
+    width: 100px;
+    height: 50px;
+    border: 2px solid white;
+}
+button:hover{
+    outline: none;
+  
+  background-color: transparent;
+  border-color: #6a77ed;
+}
+button:hover a {
+    color: #6a77ed;
+}
+@media (max-width: 769px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h5{
+         margin-top: -1rem;
+    }
+   .cards-container{
+       margin-top: 0;
+    display:flex;
+    width: 70%;
+    height: 700px;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .card-container{
+     margin: 2rem 0;
+    border-radius: 1rem;
+    border: 2px solid white;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+}
+.card {
+    
+    position: relative;
+    padding: 0 5%;
+    max-width: 95%;
+    max-height: 18rem;
+}
+}
+@media (max-width: 369px){
+    .cards-container{
+       margin-top: 0;
+    display:flex;
+    width: 90%;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+   }
+}
