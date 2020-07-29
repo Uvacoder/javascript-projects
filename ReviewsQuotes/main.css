@@ -34,6 +34,15 @@ overflow: auto;
 margin-top: 55px;
 
 }
+@media (max-width:769px) {
+ .box {
+     height: 500px;
+ }
+ .box-item{
+    width:100%;
+    height: 95%;
+   }
+}
 .box-item{
 width: 600px;
 height: 95%;
